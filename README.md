@@ -44,7 +44,7 @@ All videos can be found using this [insert link here]
 ## Important Links And Notes
 
 
-smu0717bc.slack.com
+Slack Channel - smu0717bc.slack.com
 
 -----------------------------------------
 
