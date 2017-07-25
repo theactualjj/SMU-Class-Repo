@@ -1,0 +1,336 @@
+<h2 id="lesson-plan---down-and-dirty-css">2.2 Lesson Plan - Down and Dirty CSS</h2>
+<p>Today's class is focused on introducing students to additional CSS styling techniques with typography, pseudo-classes, and external CSS frameworks. Towards the end of the course, students will be given their first glimpse of the Twitter Bootstrap Framework.</p>
+<p><code>Summary: Complete Activities 7-11 in Unit 02</code></p>
+<h5 id="instructor-priorities">Instructor Priorities</h5>
+<ul>
+<li>Students should be given a clear perspective on how to approach the class</li>
+<li>Students should understand both the concept of an external pre-made CSS stylesheet and how to incorporate one</li>
+<li>Students should understand how to incorporate a custom Google Font</li>
+<li>Students should be able to loosely explain why the Twitter Bootstrap Framework is useful and how to incorporate the Bootstrap CSS stylesheet</li>
+</ul>
+<h5 id="instructor-notes">Instructor Notes</h5>
+<ul>
+<li><p>The first series of slides in the class are intended to preempt sentiments your students may be experiencing. It's important to let students know that it's completely okay if they feel like things are moving quickly, and that the best way to succeed in the course is to expect some level of confusion as an unavoidable part of the learning experience, but to continue practicing at home.</p></li>
+<li><p>Today's class is a bit of a hodge-podge of CSS building. The first part of the class involves a light intro to typography-handling in CSS and the use of pseudo-classes to deal with button states. The second part of the class is an introductory prelude to Twitter Bootstrap.</p></li>
+<li><p>There is a lot to cover today, so don't get too bogged down in flipping through the slides. Most slides should merit a 15 second discussion at most. In many cases, the slides are more intended for students to look back at.</p></li>
+<li><p>The biggest priority for today is to make sure students understand how to include a CDN-based CSS stylesheet into their web applications. Make an effort to make sure students can articulate why such stylesheets are powerful (e.g. Pre-made CSS means we don't have to write everything from scratch.) Make certain that students are prepared and able to incorporate a CSS CDN into their projects. Some will struggle with this goal, but make an effort to get them closer. They'll have plenty more practice with this in the next class as well.</p></li>
+<li><p><strong>Important Note:</strong> If you find yourself pressed for time after the break, feel free to remove the discussion of pseudo-styles entirely (or come back to it). The Bootstrap material is far more important and more relevant to their homework assignment, so definitely prioritize this section.</p></li>
+<li><p>If you finish early, there is an extra &quot;Layout&quot; exercise hidden in the slideshow. Unhide it and have students work on it.</p></li>
+<li><p>Have your TAs reference <a href="02-Day-TimeTracker.xlsx">02-Day-TimeTracker</a> to help keep track of time during class. (Note: If this class falls on a Saturday, click the &quot;Saturday&quot; tab on the spreadsheet to see the appropriate schedule.)</p></li>
+</ul>
+<hr />
+<h3 id="class-objectives">Class Objectives</h3>
+<ul>
+<li>To work with CSS properties used for adjusting a website's typography</li>
+<li>To utilize custom fonts provided from Google Fonts</li>
+<li>To work with CSS pseudo classes to style elements based on special states</li>
+<li>To utilize the Bootstrap CSS framework for website development</li>
+</ul>
+<hr />
+<h3 id="instructor-do-welcome-1-min">1. Instructor Do: Welcome (1 min)</h3>
+<ul>
+<li>Welcome students back to class.</li>
+</ul>
+<h3 id="instructor-do-admin-items-7-min">2. Instructor Do: Admin Items (7 min)</h3>
+<ul>
+<li><p>Spend a few moments talking students through the Admin slides.</p></li>
+<li><p>At this point, students should be submitting their homework online. Make sure students know that submitting homework is required to complete the program and that, even if they couldn't complete it, they should definitely submit something rather than nothing. Try to be encouraging about it. (Perhaps ask students how the homework went, about what they learned, etc.)</p></li>
+<li><p>Then flip through the slides on &quot;Feedback&quot;. These slides are based on sentiments expressed by students in the past and are likely being felt by your own students.</p></li>
+<li><p><strong>&quot;Pace is Fast&quot;</strong> - Pretty self-explanatory, but often, students are feeling like they &quot;wish&quot; the program would slow down so they could &quot;really understand&quot; certain concepts.</p>
+<ul>
+<li><p>It's important to let them know that web development is all about learning many different technologies &quot;well-enough&quot; to put it together and re-learn when you need. They need to become comfortable with the idea of &quot;learning enough.&quot;</p></li>
+<li><p>Let them know that there will be plenty of reinforcement throughout the course. Just because they missed Git in the first week, doesn't mean they are screwed. We'll be using Git over and over again.</p></li>
+<li><p>Also let them know that the point of the program is to be a rapid immersion. Once the program completes, they can revisit any of the topics covered and dive into more in-depth.</p></li>
+</ul></li>
+<li><p><strong>&quot;Books Please&quot;</strong> - Often students express a desire to have a &quot;comprehensive reference book&quot;. What they really mean is they want a &quot;Bible of Web Development&quot;.</p>
+<ul>
+<li><p>Let them know that in this program we cover a LOT more than any single book will offer. And that to be flipping through books in class may often prove counter-productive. Instead of spending their time coding they would be flipping through pages. Learning to code requires coding. The best way to spend time is to re-practice exercises in class.</p></li>
+<li><p>That said... Students have had successes complementing class with Code School (a low-cost subscription based program with videos + tutorials); Jon Duckett's series on HTML, CSS, an JS/jQuery, and Eloquent JavaScript by Martin Haverbeke. Let them know that these are good resources if they ever want to firm up their understanding of concepts.</p></li>
+<li><p>But again, remind them, and emphasize, that they should be spending the majority of their time outside of class on actual coding.</p></li>
+<li><p>As a suggestion, offer the idea of spending their 10+ hours per week in the following way:</p></li>
+<li><p>45% doing homework,</p></li>
+<li><p>35% re-reading + re-practicing code activities</p></li>
+<li><p>20% reading + looking over slides + watching videos</p></li>
+</ul></li>
+<li><p><strong>&quot;Homework is Hard&quot;</strong> - Yes indeed it is.</p>
+<ul>
+<li><p>Let them know that they should expect the homework to be semi-challenging. Sometimes it will be easier, other times harder. (Their first homework assignment was one of the most challenging.)</p></li>
+<li><p>But let them know that so long as they are putting in the time, and working smart -- they will see gains in the long run.</p></li>
+<li><p>As a major point, let them know that if they ever find themselves staring at a blank screen for 2 hours they should absolutely reach out. That's what we're here for!</p></li>
+</ul></li>
+</ul>
+<h3 id="instructor-do-todays-class-1-min">3. Instructor Do: Today's Class (1 min)</h3>
+<ul>
+<li>Either read or have your students read the class objectives for the day.</li>
+</ul>
+<h3 id="instructor-do-css-typography-7-min">4. Instructor Do: CSS Typography (7 min)</h3>
+<ul>
+<li><p>Flip through the slides on typography. Don't spend too much time on any one slide here.</p></li>
+<li><p>Point out that good typography can make a huge difference in the aesthetic effect of a web page.</p></li>
+<li><p>Then talk about typical typographic properties.</p></li>
+<li><p>Point to note: line length isn't a CSS property. It's more of a visual standard. You don't want your text lines to extend across the entire width of a person's monitor (hard to read). Instead, you want to minimize it to about 50-75 characters per line.</p></li>
+<li><p>All other properties listed can be controlled by CSS</p></li>
+</ul>
+<h3 id="students-do-css-typography-activity-10-min">5. Students Do: CSS Typography Activity (10 min)</h3>
+<ul>
+<li>Tell the students that it's time to have a go at typography themselves!</li>
+<li>Tell them that this is Activity 1, and optionally link them to the README on gitlab via slack (for their convenience)</li>
+<li>Push or display GitHub for the following page</li>
+</ul>
+<p><code>07-CSSTypography/README.md</code></p>
+<h3 id="instructor-do-review-css-typography-activity-5-min">6. Instructor Do: Review CSS Typography Activity (5 min)</h3>
+<ul>
+<li><p>The last CSS activity should have been easy for your students. But go over it with them anyway.</p></li>
+<li><p>Open the file <code>html-template.html</code> (Solved) and <code>style.css</code> (Solved) in Sublime. Then walk students through the following points:</p></li>
+<li><p>That you incorporated a reference to the CSS page you created at the top.</p>
+<div class="figure">
+<img src="Images/1-Typography_1.png" alt="1-Typography_1" />
+<p class="caption">1-Typography_1</p>
+</div></li>
+<li><p>That you added in distinct class names to each of the body paragraphs</p>
+<div class="figure">
+<img src="Images/1-Typography_2.png" alt="1-Typography_2" />
+<p class="caption">1-Typography_2</p>
+</div></li>
+<li><p>That you then latched onto those HTML classes in the CSS page and modified various typographic properties.</p>
+<div class="figure">
+<img src="Images/1-Typography_3.png" alt="1-Typography_3" />
+<p class="caption">1-Typography_3</p>
+</div></li>
+<li><p>Point out that this is an example of what not to do (i.e. choosing random CSS typography.) Point out that choosing good typography often requires adhering to consistent principles across your site -- and it takes time to master.</p></li>
+</ul>
+<h3 id="instructor-do-custom-fonts-5-min">7. Instructor Do: Custom Fonts (5 min)</h3>
+<ul>
+<li><p>Talk about how with you can not only modify basic CSS properties, but also incorporate totally custom font-faces.</p></li>
+<li><p>Let students know that many sources (like Google) offer font-faces online for free that can be incorporated into their HTML/CSS.</p></li>
+</ul>
+<h3 id="instructor-demo-custom-fonts-5-min">8. Instructor Demo: Custom Fonts (5 min)</h3>
+<ul>
+<li><p>Walk students through the process of incorporating a Google Font. You can use the below steps as a guide.</p></li>
+<li><p>Then navigate to the <a href="https://www.google.com/fonts">Google Fonts</a> web page and find a font-face students like.</p></li>
+<li><p>Then hit the &quot;Quick Use&quot; button.</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_1.png" alt="2-GoogleFonts_1" />
+<p class="caption">2-GoogleFonts_1</p>
+</div></li>
+<li><p>Select a few font-weights</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_2.png" alt="2-GoogleFonts_2" />
+<p class="caption">2-GoogleFonts_2</p>
+</div></li>
+<li><p>Scroll down the page and point out the next steps. Show students how Google offers two links they will need: one for the HTML page and one for the CSS file. Grab both of these links.</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_3.png" alt="2-GoogleFonts_3" />
+<p class="caption">2-GoogleFonts_3</p>
+</div></li>
+<li><p>Then open the file <code>html-template.html</code> (08-GoogleFontDemo &gt; Unsolved) first in the browser and then in Sublime. Point out that its the same file they worked with just now.</p></li>
+<li><p>Then add in the HTML reference link provided by Google</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_4.png" alt="2-GoogleFonts_4" />
+<p class="caption">2-GoogleFonts_4</p>
+</div></li>
+<li><p>Then add in the CSS style provided by Google. Apply the font-face to <code>h1, h2, h3, h4</code>.</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_5.png" alt="2-GoogleFonts_5" />
+<p class="caption">2-GoogleFonts_5</p>
+</div></li>
+<li><p>Refresh the page in the browser and point out the custom fonts.</p>
+<div class="figure">
+<img src="Images/2-GoogleFonts_6.png" alt="2-GoogleFonts_6" />
+<p class="caption">2-GoogleFonts_6</p>
+</div></li>
+</ul>
+<h3 id="students-do-custom-fonts-activity-11-min">9. Students Do: Custom Fonts Activity (11 min)</h3>
+<ul>
+<li>Now it's your turn to incorporate Google Fonts!</li>
+<li>Tell them that this is Activity 2, and optionally link them to the README on gitlab via slack (for their convenience)</li>
+<li>Push or display GitHub for the following page</li>
+</ul>
+<p><code>08-GoogleFontDemo/README.md</code></p>
+<h3 id="instructor-do-review-custom-google-fonts-activity-5-min">10. Instructor Do: Review Custom Google Fonts Activity (5 min)</h3>
+<ul>
+<li>See if students ran into any global issues. Address them for the class.</li>
+</ul>
+<hr />
+<h3 id="break-15-min">11. BREAK (15 min)</h3>
+<ul>
+<li>Regroup with TAs to ensure you're keeping on schedule. If not, cut out unnecessary pseudo-style activities until end of class (skip straight to Beyond CSS Hacking).</li>
+</ul>
+<hr />
+<h3 id="instructor-do-pseudo-styles-5-min">12. Instructor Do: Pseudo Styles (5 min)</h3>
+<ul>
+<li><p>Flip through the slides on pseudo-classes. Talk about how CSS allows you to not only affect &quot;static&quot; properties, but also of ones that are more dynamic in nature.</p></li>
+<li><p>Point out the <code>:class</code> syntax.</p></li>
+<li><p>Present the case of the button with various states, in which a button may change color depending on its state.</p></li>
+<li><p>If time permits, feel free to click the link on pseudo-classes and show students a few of the other options that exist.</p></li>
+</ul>
+<h3 id="instructor-demo-pseudo-styles-7-min">13. Instructor Demo: Pseudo Styles (7 min)</h3>
+<ul>
+<li><p>Run through a quick demo of pseudo-class use, using a button as an example.</p></li>
+<li><p>Feel free to live code this example, otherwise, you can use the files in 3-Pseudoclass and simply explain the code.</p></li>
+</ul>
+<div class="figure">
+<img src="Images/3-Pseudo.png" alt="3-Pseudo" />
+<p class="caption">3-Pseudo</p>
+</div>
+<ul>
+<li><p>Once done explaining, show how the states correlate with what's happening on the browser as a user clicks a button.</p></li>
+<li><p>Point out that this is a simple example, but many others build powerful UI based off this principle. Point them to this link if they are interested in learning more. <a href="http://ianlunn.github.io/Hover/" class="uri">http://ianlunn.github.io/Hover/</a>.</p></li>
+</ul>
+<h3 id="students-do-pseudo-styles-activity-15-min">14. Students Do: Pseudo Styles Activity (15 min)</h3>
+<ul>
+<li>In this activity you'll do some styling based on the state the links (if it is hovered, active, etc.)</li>
+<li>Tell them that this is Activity 3, and optionally link them to the README on gitlab via slack (for their convenience)</li>
+<li>Push or display GitHub for the following page</li>
+</ul>
+<p><code>09-Pseudoclass/README.md</code></p>
+<h3 id="instructor-do-review-pseudo-styles-activity-5-min">15. Instructor Do: Review Pseudo Styles Activity (5 min)</h3>
+<ul>
+<li><p>Review the activity with students. See if there were any issues.</p></li>
+<li><p>If any students completed the bonus have a few of them share what they were able to do. Load up a few of their pseudo-classes and pseudo-elements and show their code and result on screen. Have these students explain what they did to the class.</p></li>
+<li><p>Point out that &quot;learning to learn&quot; via documentation is a big part of being a developer</p></li>
+</ul>
+<h3 id="instructor-do-beyond-css-hacking-5-min">16. Instructor Do: Beyond CSS Hacking (5 min)</h3>
+<ul>
+<li><p>Spend a few moments refreshing students on HTML and CSS. Point out that getting layouts and aesthetics built using raw CSS alone can be incredibly aggravating.</p></li>
+<li><p>Then convey that there is a better way.</p></li>
+<li><p>When prompted by the slide, open the file <code>bootstrap-powered.html</code> (10-WheresCSS) in the browser. Show students the overall appearance of the site.</p></li>
+</ul>
+<div class="figure">
+<img src="Images/4-WheresCSS.png" alt="4-WheresCSS" />
+<p class="caption">4-WheresCSS</p>
+</div>
+<ul>
+<li><p>Then open the same site in the browser and let students know that this site was created without the developer needing to write a single line of CSS.</p></li>
+<li><p>Then proceed with the quick activity.</p></li>
+</ul>
+<h3 id="partners-do-wheres-the-css-activity-5-min">17. Partners Do: Where's the CSS Activity (5 min)</h3>
+<ul>
+<li>Tell them that this is Activity 4, optionally slack them the link to the <code>10-WheresCSS/bootstrap-powered.html</code> file or the file itself (for convenience)</li>
+<li>Ask students to answer these questions (with their partners):</li>
+<li>Where's the CSS?</li>
+<li>Where is the HTML document drawing its styles from?</li>
+<li>How does our browser know which element to style in which way? (ex: button face or background banner)<br />
+</li>
+<li>As a hint, mention that we've used something similar with Google Fonts.</li>
+<li>Then have students share their answers with the class.</li>
+</ul>
+<h3 id="instructor-do-continue-the-css-hacking-slides-5-min">18. Instructor Do: Continue the CSS Hacking Slides (5 min)</h3>
+<ul>
+<li><p>After a few moments continue with the slideshow.</p></li>
+<li><p>Point out that the previous HTML uses a web-based CSS file from Bootstrap.</p></li>
+</ul>
+<div class="figure">
+<img src="Images/5-Bootstrap_1.png" alt="5-Bootstrap_1" />
+<p class="caption">5-Bootstrap_1</p>
+</div>
+<div class="figure">
+<img src="Images/5-Bootstrap_2.png" alt="5-Bootstrap_2" />
+<p class="caption">5-Bootstrap_2</p>
+</div>
+<ul>
+<li>Also point out that this CSS file has pre-styled &quot;classes&quot; which are styled whenever you call an element that class. Go through and point out how this is the case with the Jumbotron for instance.</li>
+</ul>
+<div class="figure">
+<img src="Images/5-Bootstrap_3.png" alt="5-Bootstrap_3" />
+<p class="caption">5-Bootstrap_3</p>
+</div>
+<ul>
+<li><p>Visit the link for the stylesheet via the browser. Then do a <code>ctrl+f</code> search for the term jumbotron. Point out that the word appears in the stylesheet, meaning that, whenever I create a block called <code>jumbotron</code>, I am utilizing CSS I didn't have to write for this block.</p></li>
+<li><p>Talk a bit about how this is a big deal because we are now using pre-defined CSS styles that someone else made.</p></li>
+</ul>
+<h3 id="partners-do-pre-defined-css-activity-5-min">19. Partners Do: Pre-Defined CSS Activity (5 min)</h3>
+<ul>
+<li><p>Have students discuss with their partners why predefined CSS is a big deal. Then have students share their answers with the class.</p></li>
+<li><p>The answer should be something along the lines of:</p></li>
+</ul>
+<blockquote>
+<p>Predefined CSS styles mean that a front-end developer has a &quot;starting place&quot; for creating web layouts. Instead of having to create the styles for every element, they can quickly borrow from commonly used elements and build layouts with best practices.</p>
+</blockquote>
+<h3 id="instructor-do-whats-bootstrap-10-min">20. Instructor Do: What's Bootstrap (10 min)</h3>
+<ul>
+<li><p>Continue with the slideshow through the section on What is Bootstrap.</p></li>
+<li><p>The most important element to convey is that Bootstrap comes with a set of pre-built UI elements that can be easily deployed. It may make sense to have students visit the Bootstrap web page at this point.</p></li>
+<li><p>Also convey that Bootstrap makes it easy to build mobile-responsive websites. Have students explain what that means before showing the slide. Choose any mobile responsive website and demonstrate how shrinking the screen width also shifts the elements.</p></li>
+</ul>
+<h3 id="instructor-do-key-bootstrap-features-10-min">21. Instructor Do: Key Bootstrap Features (10 min)</h3>
+<ul>
+<li>Spend a few moments describing the variety of UI components that Bootstrap offers. Don't get lost in over-describing any of the elements, and don't try to explain the code for each component. Simply describe the types of components Bootstrap offers.</li>
+</ul>
+<h3 id="instructor-demo-bootstrap-components-10-min">22. Instructor Demo: Bootstrap Components (10 min)</h3>
+<ul>
+<li><p>Spend a few moments showing students how to utilize the simplest of Bootstrap CSS or components.</p></li>
+<li><p>We'll talk about layouts on Saturday, so for now the focus is on making sure students know how to reference the Bootstrap CDN and that they begin to copy and paste code from the Bootstrap documentation.</p></li>
+<li><p>As a suggestion, use the files in <code>11-BootstrapDemo</code> and the steps below as an example. This would definitely be one instance in which students will need to be walked through the process &quot;live&quot;.</p></li>
+<li><p>Head to downloads for Bootstrap</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_1.png" alt="6-BootstrapDemo_1" />
+<p class="caption">6-BootstrapDemo_1</p>
+</div></li>
+<li><p>Grab just the CSS CDN content (we don't want javascript since we won't have jQuery just yet)</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_2.png" alt="6-BootstrapDemo_2" />
+<p class="caption">6-BootstrapDemo_2</p>
+</div></li>
+<li><p>Head to the CSS section</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_3.png" alt="6-BootstrapDemo_3" />
+<p class="caption">6-BootstrapDemo_3</p>
+</div></li>
+<li><p>Scroll down to buttons and point out the basic options for creating buttons.</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_4.png" alt="6-BootstrapDemo_4" />
+<p class="caption">6-BootstrapDemo_4</p>
+</div></li>
+<li><p>Scroll a bit further to the options section and point out the differences between primary, success, danger, etc. buttons</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_5.png" alt="6-BootstrapDemo_5" />
+<p class="caption">6-BootstrapDemo_5</p>
+</div></li>
+<li><p>Scroll a bit further to show the options for sizing</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_6.png" alt="6-BootstrapDemo_6" />
+<p class="caption">6-BootstrapDemo_6</p>
+</div></li>
+<li><p>Use the button class names as a model for creating a fancier button.</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_7.png" alt="6-BootstrapDemo_7" />
+<p class="caption">6-BootstrapDemo_7</p>
+</div></li>
+<li><p>Then run the html in the browser and showcase the fancier buttons.</p>
+<div class="figure">
+<img src="Images/6-BootstrapDemo_8.png" alt="6-BootstrapDemo_8" />
+<p class="caption">6-BootstrapDemo_8</p>
+</div></li>
+</ul>
+<h3 id="partners-do-bootstrap-components-15-min">23. Partners Do: Bootstrap Components (15 min)</h3>
+<ul>
+<li>Now you get to work with partners and choose a few components! And of course share your work with the class.</li>
+<li>Tell them that this is Activity 5, and optionally link them to the README on gitlab via slack (for their convenience)</li>
+<li>Push or display GitHub for the following page</li>
+</ul>
+<p><code>11-BootstrapDemo/README.md</code></p>
+<h3 id="instructor-do-review-bootstrap-component-activity-5-min">24. Instructor Do: Review Bootstrap Component Activity (5 min)</h3>
+<ul>
+<li><p>Ask if there are any specific questions.</p></li>
+<li><p>If not, re-do the process you used to incorporate a Bootstrap component. You may want to choose a different Bootstrap component this time.</p></li>
+<li><p>For instance, if you followed the guide above for adding a Bootstrap button, you may want to copy the code for a Navbar (&gt; Components &gt; Scroll to Navbar).</p></li>
+<li><p>To do so, just copy and paste the entire code from the Navbar section into the HTML page.</p></li>
+<li><p>Let students know it's okay if it's hard to make sense of it. The key point is to start breaking it apart and filling it up with your own content.</p>
+<p><img src="Images/7-Navbar.png" alt="7-Navbar" />.</p></li>
+<li><p>Also let students know that the key takeaway is that we grabbed the Bootstrap CDN, copied the code from their website, and immediately got working components.</p></li>
+</ul>
+<h3 id="instructor-do-takeaways-1-min">25. Instructor Do: Takeaways (1 min)</h3>
+<ul>
+<li>Go over the Takeaways slide.</li>
+</ul>
+<h3 id="ta-do-homework-2-demo-5-min">26. TA Do: Homework 2: Demo (5 min)</h3>
+<ul>
+<li>TA should come to the front of the class and explain what Homework #2 will look like. Essentially it is a recreation of the earlier portfolio, but this time using media queries (a concept covered next class) and Twitter Bootstrap to build the layout instead. Let them know that they should find this version of the previous assignment much easier to accomplish.</li>
+</ul>
+<hr />
+<h3 id="end-0-min">17. END (0 min)</h3>
+<hr />
+<hr />
+<h3 id="copyright">Copyright</h3>
+<p>Coding Boot Camp (C) 2016. All Rights Reserved.</p>
