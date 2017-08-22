@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Basic Table</h2>
+    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Movie Name</th>
+          <th>Year</th>
+          <th>Actors</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Example Movie 1 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- Example Movie 2 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <!-- Example Movie 3 -->
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+
+    function createRow(data, item) {
+      // var item = console.log(items[item])
+      // TODO: creates the row
+      // Getting the second row of the table and storing it in secondRowTds
+      var newRow = item + `RowTds`
+      newRow = $("table")
+        .children()
+        .eq(1)
+        .children("tr")
+        .eq(item)
+        .children("td")
+        console.log(data)
+
+      // Setting the inner text of each <td> in secondRowTds
+        newRow.eq(0).text(data.Title)
+
+        newRow.eq(1).text(data.Year)
+
+        newRow.eq(2).text(data.Actors)
+    }
+
+    var queryURL = "http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC"
+    $.ajax({
+      url: queryURL,
+      method: 'GET'
+    }).done(function (response) {
+      console.log(response)
+      var items = response.data
+      // console.log(items)
+      for (var item in items) {
+        var data = items[item]
+        createRow(data, item)
+      }
+    })
+  </script>
+</body>
+
+</html>
