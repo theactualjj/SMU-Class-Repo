@@ -1,0 +1,24 @@
+| Lesson Plan 10.1 - Time Tracker |        |                                                     |      |          |     |                                                                                 |
+| ------------------------------- | ------ | --------------------------------------------------- | ---- | -------- | --- | ------------------------------------------------------------------------------- |
+|                                 | Number | Activity                                            | Time | Value    |     | Notes                                                                           |
+| 6:30 PM                         | 1      | Instructor Do: Project Week Feedback (Slides)       | 0:03 |          |     | High or Critical Activities:                                                    |
+| 6:33 PM                         | 2      | Instructor Do: Assessment (Slides)                  | 0:03 |          |     | Are worth spending extra moments on in class and/or may be pivotal to homework. |
+| 6:36 PM                         | 3      | Instructor Do: The Mystery of Backend (Slides)      | 0:10 | Critical |     |                                                                                 |
+| 6:46 PM                         | 4      | Instructor Do: Intro to Node.js (Slides)            | 0:10 | Critical |     |                                                                                 |
+| 6:56 PM                         | 5      | Instructor Do: Quick Node Check                     | 0:05 | High     |     |                                                                                 |
+| 7:01 PM                         | 6      | Instructor Do: Hello.js Demo                        | 0:05 |          |     |                                                                                 |
+| 7:06 PM                         | 7      | Students Do: Sriracha.js Demo                       | 0:05 |          |     |                                                                                 |
+| 7:11 PM                         | 8      | Instructor Do: Arguments.js                         | 0:05 | High     |     |                                                                                 |
+| 7:16 PM                         | 9      | Instructor Do: Arguments.js Addition                | 0:05 | High     |     |                                                                                 |
+| 7:21 PM                         | 10     | Partners Do: Parameter Check                        | 0:10 | Critical |     |                                                                                 |
+| 7:31 PM                         | 11     | Instructor Do: Review Parameter Check               | 0:05 |          |     |                                                                                 |
+| 7:36 PM                         | 12     | Students Do: Calculator.js                          | 0:30 | Critical |     |                                                                                 |
+| 8:06 PM                         | 13     | Instructor Do: Review Calculator.js                 | 0:10 |          |     |                                                                                 |
+| 8:16 PM                         | 14     | Break                                               | 0:15 |          |     |                                                                                 |
+| 8:31 PM                         | 15     | Partners Do: Multiples.js                           | 0:10 | Low      |     |                                                                                 |
+| 8:41 PM                         | 16     | Instructor Do: Review Multiples.js                  | 0:05 | Low      |     |                                                                                 |
+| 8:46 PM                         | 17     | Instructor Do: Modularization Using Require/Exports | 0:15 | High     |     |                                                                                 |
+| 9:01 PM                         | 18     | Partners Do: Bands.js                               | 0:15 | High     |     |                                                                                 |
+| 9:16 PM                         | 19     | Instructor Do: Review Bands.js                      | 0:07 |          |     |                                                                                 |
+| 9:23 PM                         | 20     | TA Do: Homework Demo                                | 0:07 |          |     |                                                                                 |
+| 9:30 PM                         | 21     | END                                                 |      |          |     |                                                                                 |
