@@ -75,16 +75,16 @@ var firstPresident = new BasicCard(
     "Who was the first president of the United States?", "George Washington");
 
 // "Who was the first president of the United States?"
-console.log(firstPresident.front); 
+console.log(firstPresident.front);
 
 // "George Washington"
-console.log(firstPresident.back); 
+console.log(firstPresident.back);
 
 var firstPresidentCloze = new ClozeCard(
     "George Washington was the first president of the United States.", "George Washington");
 
 // "George Washington"
-console.log(firstPresidentCloze.cloze); 
+console.log(firstPresidentCloze.cloze);
 
 // " ... was the first president of the United States.
 console.log(firstPresidentCloze.partial); "
@@ -98,7 +98,7 @@ var brokenCloze = new ClozeCard("This doesn't work", "oops");
 
 ### Bonuses
 
-* Write your constructors such that users can call them with or without the `new` keyword. 
+* Write your constructors such that users can call them with or without the `new` keyword.
 
   * Look up scope-safe constructors, and try to implement them. It takes only two additional lines of code.
 
